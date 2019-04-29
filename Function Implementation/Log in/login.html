@@ -1,0 +1,99 @@
+<! This was developed by Jisan >
+
+<! DOCTYPE html >
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+Input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+Button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+Button:hover {
+  opacity: 0.8;
+}
+
+.Cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.Imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+Img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.Container {
+  padding: 16px;
+}
+
+Span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media Screen and (max-width: 300px) {
+  Span.psw {
+     display: block;
+     float: none;
+  }
+  .Cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<form action="/action_page.php">
+  <div class="Imgcontainer">
+    <img src="academics.png" alt="Academics" class="Academics">
+  </div>
+
+  <div class="Container">
+    <label for="userName"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="userName" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="Container" style="background-color:#f1f1f1">
+    <button type="button" class="Cancelbtn">Cancel</button>
+    <span class="password">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
