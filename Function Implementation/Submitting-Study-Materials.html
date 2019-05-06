@@ -1,0 +1,37 @@
+<!This code was developed by Apurba>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Study Materials</title>
+</head>
+<body>
+    <h2>Submit Report</h2>
+    <form action="process-form.php" method="post">
+        <p>
+            <label for="inputName">Name:<sup>*</sup></label>
+            <input type="text" name="name" id="inputName">
+        </p>
+        <p>
+            <label for="inputEmail">Email or Username:<sup>*</sup></label>
+            <input type="text" name="email" id="inputEmail">
+        </p>
+        <p>
+            <label for="inputSubject">Subject:</label>
+            <input type="text" name="subject" id="inputSubject">
+        </p>
+        <p>
+            <label for="inputComment">Description:<sup>*</sup></label>
+            <textarea name="message" id="inputComment" rows="5" cols="30"></textarea>
+            <br> <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image or file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+        </p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
